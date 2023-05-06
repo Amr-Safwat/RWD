@@ -84,11 +84,28 @@ body {
   }
 }
 /* Features */
-
+/* About Us */
+.about {
+  background-color: #eee;
+  padding: 30px 0;
+}
+.about .h1 {
+  font-size: 50px;
+  color: #848484;
+}
+.about .responsive-p {
+  color: #848484;
+  font-size: 22px;
+}
+/* About Us */
 
 @media (max-width: 767px) {
   .visible-xs {
     display: block !important;
+  }
+  .responsive-p {
+    text-align: center;
+    font-size: 20px !important;
   }
 }
 @media (min-width: 768px) {
@@ -123,5 +140,8 @@ body {
 }
 .h1 {
   font-size: 2em;
+}
+.responsive-p {
+  line-height: 1.8;
 }
 /* Frameworks */
