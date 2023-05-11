@@ -140,8 +140,11 @@ body {
 }
 @media (max-width: 768px) {
   .pricing .plan {
-      width: 100%;
+      width: 90%;
       margin: 0 auto 10px;
+  }
+  .pricing .container {
+    flex-direction: column;
   }
 }
 .pricing .best::before {
@@ -179,6 +182,48 @@ body {
   line-height: 2;
 }
 /* Pricing Table */
+/* What They Say */
+.they-say {
+  padding: 50px 0;
+}
+.they-say .h1 {
+  font-size: 50px;
+  margin: 0 0 30px;
+  color: #777;
+}
+.they-say .person-say {
+  background-color: #eee;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  float: left;
+}
+@media (min-width: 768px) {
+  .they-say .person-say:first-of-type {
+    width: 100%;
+  }
+  .they-say .person-say:not(:first-of-type) {
+    width: 49%;
+  }
+  .they-say .person-say:last-of-type {
+    margin-left: 2%;
+  }
+}
+@media (min-width: 992px) {
+  .they-say .person-say:first-of-type {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+.they-say .person-say h3 {
+  margin: 0 0 10px;
+}
+.they-say .person-say p {
+  margin: 0;
+  line-height: 1.8;
+}
+/* What They Say */
 @media (max-width: 767px) {
   .visible-xs {
     display: block !important;
