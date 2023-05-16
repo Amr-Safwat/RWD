@@ -254,6 +254,72 @@ body {
   }
 }
 /* What They Say */
+/* Information */
+.information {
+  background-color: #eee;
+  padding: 30px 0;
+  font-size: 18px;
+}
+.information .h1 {
+  font-size: 50px;
+  color: #848484;
+}
+.information ul li {
+  display: inline-block;
+  padding: 10px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+.information ul li {
+  display: block;
+}
+}
+.information .info-content > div {
+  background-color: white;
+  padding: 25px;
+  line-height: 1.8;
+  animation: show .3s ease;
+}
+@keyframes show {
+  from {
+    transform: scale(0.9);
+  } to {
+    transform: scale(1);
+  }
+}
+.information .info-content > div:not(:first-child) {
+  display: none;
+}
+.information ul li.selected {
+  background-color: white;
+  border-top: 2px solid dodgerblue;
+}
+/* Information */
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #eee;
+}
+.footer .copyright,
+.footer .design {
+  float: left;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .footer .copyright,
+.footer .design {
+  width: 100%;
+}
+}
+@media (min-width: 768px) {
+  .footer .copyright,
+.footer .design {
+  width: 50%;
+}
+}
+/* Footer */
 @media (max-width: 767px) {
   .visible-xs {
     display: block !important;
